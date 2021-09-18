@@ -1,0 +1,64 @@
+.confirm{
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  width: 350px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px;
+  height: fit-content;
+  font-family: 'Billabong', sans-serif;
+  &__img{
+    height: 76px;
+    width: 64px;
+    margin-top: 20px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  &__description{
+    text-align: center;
+    width: 96%;
+  }
+  &__input{
+    input{
+      width: 278px;
+    }
+  }
+  &__button{
+    height: 30px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    &-btn{
+      background-color: #0095f6;
+      border: 1px solid #0095f6;
+      border-radius: 3px;
+      color: white;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__number{
+    display: flex;
+    &-p1{
+      color: #0095f6;
+      margin-right: 5px;
+
+    }
+    &-p2{
+      margin-left: 5px;
+      color: #0095f6;
+
+    }
+  }
+}

@@ -1,0 +1,244 @@
+.login{
+border: 1px solid #dbdbdd;
+  min-height: 500px;
+  width: 400px;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+
+  &__email{
+    width: 80%;
+    margin: 30px auto 10px ;
+    height: 36px;
+  }
+  &__email input{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #dbdbdd;
+    border-radius: 3px;
+    margin: auto;
+  }
+  &__email input:focus{
+    outline: none;
+  }
+  &__password{
+    width: 80%;
+    margin: 30px auto 20px;
+    height: 36px;
+  }
+  &__password input{
+      width: 100%;
+      height: 36px;
+      border: 1px solid #dbdbdd;
+      border-radius: 3px;
+    }
+  &__password input:focus{
+    outline: none;
+  }
+
+&__title{
+  font-family: 'Cookie', sans-serif;
+  font-size: 55px;
+  margin-top: 20px;
+}
+  &__btn{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  &__btn button{
+    background-color: #0095f6;
+    border: 1px solid #0095f6;
+    border-radius: 3px;
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+  }
+  &__account{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+  button{
+      background-color: #0095f6;
+      border: 1px solid #0095f6;
+      border-radius: 3px;
+      color: white;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      height: 100%;
+      width: 100%;
+  }
+  }
+  &__lines{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    &-line12{
+      background-color: grey;
+      width: 130px;
+      height: 2px;
+      margin: 5px 0 0 40px;
+      align-items: center;
+    }
+    &-line21{
+      background-color: grey;
+      width: 130px;
+      height: 2px;
+      margin: 5px 40px 0 0;
+      align-items: center;
+    }
+    &-ili1{
+      margin: 10px 0 0 0;
+      font-size: 24px;
+      color: grey;
+    }
+  }
+}
+.rin{
+  text-align: center;
+  font-size: 13px;
+  color: darkred;
+  position: relative;
+  top: -120px;
+}
+.auth{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  //background-image: url("https://i.imgur.com/lndCeR1.jpg");
+  //background: url("http://pa1.narvii.com/6704/95f026c3c4ca500340db4be77a773c7c7ee4dc8a_00.gif");
+  background: url("https://i.gifer.com/79ds.gif");
+  //background-repeat: no-repeat;
+  //background: url("https://i.gifer.com/4A9v.gif");
+  background-size: cover;
+}
+
+.reg{
+  border: 1px solid #dbdbdd;
+  min-height: 500px;
+  width: 350px;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  &__title{
+    font-family: 'Cookie', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  &__description{
+    font-family: 'Glory', sans-serif;
+    color: grey;
+    margin: 20px auto 10px;
+    width: 32vh;
+    text-align: center;
+  }
+  &__lines{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-line1{
+      background-color: grey;
+      width: 130px;
+      height: 2px;
+      margin: 5px 10px 0 40px;
+      align-items: center;
+    }
+    &-line2{
+      background-color: grey;
+      width: 130px;
+      height: 2px;
+      margin: 5px 40px 0 10px;
+      align-items: center;
+    }
+    &-ili{
+      margin: 10px 0 0 0;
+      font-size: 22px;
+      color: grey;
+    }
+
+  }
+  &__input{
+    margin-bottom: 10px;
+  input{
+    width: 80%;
+    height: 36px;
+    border: 1px solid #dbdbdd;
+    border-radius: 3px;
+  }
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #0095f6;
+    border: 1px solid #0095f6;
+    border-radius: 3px;
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  &__reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #6495ED;
+    border: 1px solid #6495ED;
+    border-radius: 3px;
+    color: white;
+  }
+  &__cookie{
+    font-size: 10px;
+    margin-top: 7px;
+  }
+}
+
+.account{
+  border: 1px solid #dbdbdd;
+  min-height: 70px;
+  width: 350px;
+  height: fit-content;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+
+  &__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px auto;
+
+  }
+}
+
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 15px;
+  color: darkblue;
+  &__img{
+
+    img{
+      width: 136px;
+      height: 40px;
+      margin: 15px 5px 0 5px;
+    }
+  }
+}
+
