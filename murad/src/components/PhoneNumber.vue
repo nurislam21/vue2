@@ -10,11 +10,13 @@
       </p>
 
       <div class="confirm__input">
-        <input placeholder=" #########" type="text">
+        <input v-model="userNumber" placeholder=" #########" type="text">
       </div>
-
+      <div v-for="(msg, ind) in filedError.userNumber" :key="ind" class="login__error">
+        {{msg}}
+      </div>
       <div class="confirm__button">
-        <div class="confirm__button-btn">Подтвердить</div>
+        <div @click="numbers" class="confirm__button-btn">Подтвердить</div>
       </div>
       <div class="confirm__number">
         <p v-on:click="changeNum" class="confirm__number-p1">Изменить номер</p>
@@ -44,6 +46,8 @@
 <script>
   import {defineComponent} from 'vue'
   import ChangeNumber from "./ChangeNumber";
+  import validateModels from '../utils'
+  import validate from 'validate.js'
     export default defineComponent({
         name: "PhoneNumber",
       components:{
@@ -51,16 +55,31 @@
       },
       data(){
           return{
-            component:'confirm'
+            component:'confirm',
+            userNumber:'',
+            filedError:{},
+            NumberInvalidModel: {
+              userNumber: validateModels.userNumber
+            }
           }
       },
       methods:{
           changeNum(){
             this.component = 'changeNumber'
-          }
+          },
+      numbers(){
+            const modelInput = {
+              userNumber: this.userNumber
+            };
+            if (validate(modelInput, this.NumberInvalidModel)){
+              this.filedError = validate(
+                modelInput,
+                this.NumberInvalidModel,{fullMessages:false}
+              )
+            }
+        }
       }
-    }
-    )
+    })
 </script>
 
 <style>
