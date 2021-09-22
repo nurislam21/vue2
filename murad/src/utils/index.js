@@ -21,5 +21,17 @@ export default {
       minimum: 6,
       message:'Длина username должно быть больше 6 и меньше 10'
     }
-  }
+  },
+  userPhone:{
+    presence: true,
+    format:{
+      pattern: /^[a-z\d!_]+$/,
+      message: 'Invalid phone!',
+    },
+    length:{
+      maximum: 17,
+      minimum: 13,
+      message:'Длина номера должно быть больше 13 и меньше 17'
+    }
+  },
 }
