@@ -127,17 +127,16 @@
 }
 
 .auth {
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  //background-image: url("https://i.imgur.com/lndCeR1.jpg");
+  background-size: cover;
+  //background: url("https://i.gifer.com/79ds.gif");
+  background-image: url("https://i.imgur.com/lndCeR1.jpg");
   //background: url("http://pa1.narvii.com/6704/95f026c3c4ca500340db4be77a773c7c7ee4dc8a_00.gif");
-  background: url("https://i.gifer.com/79ds.gif");
   //background-repeat: no-repeat;
   //background: url("https://i.gifer.com/4A9v.gif");
-  background-size: cover;
 }
 
 .reg {

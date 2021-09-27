@@ -1,9 +1,9 @@
 <template>
   <div v-if="component === 'registration'" class="register">
-    <div class="rin">
-      Рин Нохара
-      のはらリン
-    </div>
+<!--    <div class="rin">-->
+<!--      Рин Нохара-->
+<!--      のはらリン-->
+<!--    </div>-->
     <div class="reg">
       <div class="reg__title"><h2>Instagram</h2></div>
       <div class="reg__description">Зарегистрируйтесь, чтобы смотреть фото и видео ваших друзей.</div>
